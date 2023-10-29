@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comic Neue', cursive;
+    /* font-family: 'Plus Jakarta Sans', sans-serif; */
+    list-style: none;
+}
+body{
+    background: #f2e6d6;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+.card h1{
+    font-size: 
+    40px;
+}
+.card{
+    width: 400px;
+ border: 4px solid #242424;
+ border-radius: 5px;
+ padding: 20px;
+
+}
+.card #form{
+ width: 100%;
+ height: 100%;
+}
+#form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#form button img{
+ width: 50px;
+ height: 50px;
+}
+.rat input{
+ width: 100%;
+}
+#search{
+    background: none;
+    border: none;
+    border-bottom:4px solid #242424 ;
+    
+}
+.rat input{
+    width: 80%;
+}
+.form-control{
+ background: none;
+ width: 70% !important;
+}
+#form input{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: none;
+    border: none;
+    border-bottom:4px solid #242424 ;
+ 
+}
+#form button{
+ background: none;
+ border: none;
+ padding: 0;
+}
+/* #form input:invalid{
+ border: 2px solid red;
+ animation: shake 0.2s 2;
+
+} */
+#item li{
+    border-bottom: 4px solid #242424;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+.fa-close{
+ /* border: 4px solid #242424; */
+}
+@keyframes shake {
+    25%{
+        translate: 6px 0;
+    }
+    50%{
+        translate: -6px 0;
+    }
+    75%{
+        translate:  6px 0;
+    }
+}

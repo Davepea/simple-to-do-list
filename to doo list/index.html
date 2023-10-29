@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="card">
+        <div class="cont">
+            <h1 class="fs-3" id="headers">
+                Task List
+                <form action="" class="rat">
+                    <input type="text" placeholder="search"  id="search">
+                    <!-- <input type="submit" value=""> -->
+                </form>
+            </h1>
+            <form action="" id="form">
+                <!-- <label for="" style="font-size:12px;">New Task</label> -->
+                <input type="text" class="form-control" >
+
+            
+                <!-- <input type="submit" class="btn btn-primary my-4 px-5" value="Add Task">  -->
+                <button class="btn btn-primary my-4 px-5">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAGxklEQVR4nO2aW0wUVxiAT1pN02vatzZt0peml/ShD+1jE9P0oUkTk7oriSa+NCkabU0hzFmoFhcVlT2zi66yK1tBzuxCgQURuRPQdQaLclFKYUFlNahJpVVU0BqtNqf5Z3dWVMBlL8DMzpf8T2SH+b+c2//PQUhHR0dHJ+noda1dKjmMaySHsVpyGi9LTuM9yWm8LjkMZySncafPZfhwod9x0SI6DV9JTsOI5DSyWeKB6DS6fAUpryz0+y4qpAJjuuQwPARJ3cWr2GjtOjbens5ui5hN+Dg21ryRDVV8yzr2B0WKDuPvPvuKdxb6vRcFotOYrYywC9Wp7I5kYv/MEDfa0mXBisRWfs3LKJkRQ/I6nEZ2pX7DjOKmxqSPC0uUHIZClKyIj8lbH5E8Jcbb05Tp/EDa9837KNkQY5CnBKyJwVFo3I6SCTEO8iDGmn9QduZulCxIDoMpLK8uenkQsDuH1sFrKBkQ4zTylIAjjrwbOw13kdYR4ywvuJGkh6aw4SLSMmIC5EGMHl6nTOFKpFXEBMm7I2LWXbw6NAJXrkJaREyQPIhAdWqoGjGc9ZmXLUFaQ0ygPKhYQlP3oVRg/BJpDTGh8tbLzw3uvivSkNaQ4njOe0pewwbWsX+lMvq2IK0h6fKiR5cXA7q8GNDlxYAuLwZ0eTGgy4sBXV4M6PJioDhnR3OddYNeYURDcU5uI48FZjOVsC66SS/P5kLRlrxmkKdEfiZlQ9XbE9AYMGYjrUG4EhNIs5rczFfnZ0eEk2GJ/qrYJGq+MUBC8viQvIB/Uo54SExaeYE4SEx6eYEYJOry/NGPRF2eP3qJSSBPyA6vefVD04qaMQYnWU3JiUdHnKptySFvV1bZG1ZM1xJMz8y2YcQyEjUnz2z2LeEz3MsJRw8TLPyrHI73Zlew43Mdec8YiV3CJu3Is2DPBzwWcniOXgpXFSY3E3Y3M7FxmJ0fuBWbvGlGIpR9ddbv1Vth2Dd6XiOckMpj2jm1FCvMrWHNlafZYO/fcZM2NWAN5U3B/1Wck9uO1IY1g35KOMFFOHpbkbZ7cxmrKDzGOtsC8lRLhDgIsWFILvvgfx407zqG1IItnb7NY5rJYyEwdbQdsBxh7Yf72bn+mwmT9ri84P8tMlta0GLHvtH+AsHuFJ6j9QTTh4q0fTleeR3qP3U14dKmk8djQR0bBsH06KMWk4dV7D8qT9GRwYl5E/dozQtOWzhPIrVAMP0TXrrF28eG+8bnVVpA7fIsuOhVeeRllc77iAuoedoqWLDwGbz4LztrdXnRYMV0NQgsK2ifd4HH1Tptp0I4aoYEjnhOzVnA+T9uyhGNvJGBW3LZp2p5AI9pGSRxrG4w4uR7jo+yg3yDfNCFKLE2sG7x0pwESk1ng/IwHUBqhmChFxLp9o1GLC8/qzR8wA4ff7JKWc8cJHr2toZ+S9ORmiGYTkAiQ2euR5T4Qb7hKXlKlNgaI3qG//Q1Zs30MJ6jDwhX8iZSK/lpnrcgcfvP5RGvedbQoj9dwN8i6cZAAyL0mxqkZixYWCZ3Ovj6eRVYuKMm+JsM93KkZoItKoF5Xb6I165iUjfLFG6KaA0N7rx0zLXWtRSpGcJRAsk0lvdEvHY5tx2aVl7+T6WsV7z8zGdUHZCUzcOC1A6PaS0kIzUNRyTPtbNWTt6xtUqe9uFjjK0pInnQCtuz+Vf5GXkm4SOkdggWhiGZ0yeuRCyvMLcm3IGG9W4uLXz40BQafZ1I7XhTvM/zHL0PLfOzs1QT/hnkRRPU1qRUHqlI7diy3O/J0zHHOy/y+rvG5OlOML27+8eS15HasWDhaxADX9MSLS/gn2T1pV3K7utGWoBwQhokdKi4I+HyRgYnmGOrV36eBdMvkBYgHHVAQq1VfQmVF/BPss62C0rj4KLZbH4OaQEe0zZI6rfWkYTKC/gnWbnzqPrbVk9CsHAZklK+uCVK3nDfeLB7wwn/8Rml7yItYDa7XoKEbJkeNjIwkTB5gcFJ+UNV6OzXhrSCLdP9iSIrHvKG+sblSgTuxjRV9so3F+BDPJR34UYDpquRVuBNdKV8hLG3RCzvXP9NuWKBsg9q58pCHysi9XIrbKbmQiiuwndnW7r3RaQVCCdslvuAoW8SU+UN9vwlf1SHaxxwK6HU3socW6tnbWMRLNwjmPp5TL2EE/LgrqA1U/gcLiUhLUI4SpXk7dnlzL2nRZYIa+KMI4mj94O1M62FLo4V0++gn6jqjnK0PHlN7QlRN3gsnIBbWXDJiGB3Sp6JfgwXKhf6vRcNBNNzhBNOwki0YLoJ1kTYWDS1Tuno6OjooHjwP3u7Wgf4+5pUAAAAAElFTkSuQmCC">
+                </button>
+            </form>
+            </div>
+            <div class="col-lg-12 second">
+                <p class="fs-3">
+                    Tasks
+                </p>
+                <ul class="collection-item item" id="item">
+                </ul>
+            </div>
+                
+            
+    </div>
+          
+    <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+    <script src="todo.js"></script>
+</body>
+</html>
